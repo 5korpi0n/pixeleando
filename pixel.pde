@@ -16,7 +16,7 @@ void setup() {
 }
 
 void draw() {
-//  for(int i=0; i<(img.width / MAX_POINT); i++) {  // Repito el proceso segun el ancho de la imagen dividido por el mayor tamaño de punto
+  for(int i=0; i<(img.width / MAX_POINT); i++) {  // Repito el proceso segun el ancho de la imagen dividido por el mayor tamaño de punto
 //    float pointillize = map(mouseX, 0, width, smallPoint, largePoint);
     int x = int(random(img.width));            // Tomo un valor x al azar entre 0 y el ancho de la imagen
     int y = int(random(img.height));           // Tomo un valor y al azar entre 0 y el alto de la imagen 
@@ -51,5 +51,5 @@ void draw() {
                                                                        //              (x,y) *          * (x+p, y)
     }
 //    println(figure);
-//  }
+  }
 }
